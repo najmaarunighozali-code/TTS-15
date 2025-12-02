@@ -1,0 +1,159 @@
+/* Reset Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Warna latar belakang abu-abu muda */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Wadah Utama (Kertas CV) */
+.container {
+    max-width: 800px;
+    background-color: #ffffff;
+    margin: 0 auto; /* Posisi tengah */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Efek bayangan */
+}
+
+/* Header */
+.header-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-section h1 {
+    color: #2c3e50; /* Warna biru tua */
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+/* Layout Biodata (Flexbox) */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-pic img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* Agar foto tidak gepeng */
+    border-radius: 50%; /* Membuat foto bulat */
+    border: 5px solid #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-info h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: left;
+    width: 120px;
+    color: #555;
+}
+
+table td {
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+/* Garis Pembatas */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 30px 0;
+}
+
+/* Bagian Hobi & Video */
+.hobby-section h2, .social-section h2 {
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.video-wrapper {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.caption {
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* Tombol Sosial Media */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn-sosmed {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.btn-sosmed:hover {
+    transform: translateY(-3px); /* Efek naik saat disentuh */
+    opacity: 0.9;
+}
+
+.instagram { background-color: #E1306C; }
+.linkedin { background-color: #0077b5; }
+.github { background-color: #333; }
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    .profile-section {
+        flex-direction: column; /* Foto dan teks jadi atas-bawah */
+        text-align: center;
+    }
+    
+    .social-links {
+        flex-direction: column;
+    }
+    
+    .btn-sosmed {
+        text-align: center;
+    }
+}
